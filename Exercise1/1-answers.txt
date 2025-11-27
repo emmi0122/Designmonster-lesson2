@@ -1,0 +1,9 @@
+Besvara följande frågor:
+Vad händer om utvecklarna av klassen Storage bestämmer sig för att ändra implementationen av List till LinkedList?
+Koden i main kompilerar inte längre
+
+Tänk på anropen i main – finns metoden trimToSize() i LinkedList?
+Nej, bara i ArrayList
+
+Bör Main veta vilken konkret typ av lista Storage returnerar?
+Nej, main bör bara veta att det är en List

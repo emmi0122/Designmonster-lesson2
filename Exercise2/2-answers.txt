@@ -1,0 +1,19 @@
+Frågor:
+Gör ett UML-diagram som visar arvshierarkin (du behöver inte vara exakt).
+<<abstract>>
+Employee
+---------
+-name: String
+-department: String
+----------------
++name()
++department()
++toString()
+-------------
+Engineer ------ Manager
++toString()     +toString()
+
+Är det möjligt i denna design att en Engineer också blir Manager?
+Nej, i Java kan en instans bara vara av en klass. En Engineer kan inte också vara Manager - man måste välja en eller annan
+
+Designa om klasserna så att det bara finns en (konkret) klass Employee.
