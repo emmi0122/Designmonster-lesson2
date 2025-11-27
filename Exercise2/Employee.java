@@ -1,15 +1,16 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Employee {
+public class Employee {
     private String name;
     private String department;
     private List<Role> roles;
 
-    public Employee(String name, String department, Role initiaRole) {
+    public Employee(String name, String department, Role initialRole) {
         this.name = name;
         this.department = department;
         this.roles = new ArrayList<>();
+        this.roles.add(initialRole);
     }
 
     public String name() {
@@ -22,6 +23,10 @@ public abstract class Employee {
 
     public void addRole(Role role) {
         roles.add(role);
+    }
+
+    public void removeRole(Role role) {
+        roles.remove(role);
     }
 
     @Override
